@@ -1,7 +1,8 @@
 import React, { useRef } from "react";
 
-const Button = ({ label, action }) => {
+const ButtonRef = ({ label, action }) => {
   const buttonRef = useRef(null);
+
   return (
     <button onClick={() => console.log(buttonRef.current)} ref={buttonRef}>
       Click Me
@@ -9,4 +10,4 @@ const Button = ({ label, action }) => {
   );
 };
 
-export default Button;
+export default ButtonRef;
